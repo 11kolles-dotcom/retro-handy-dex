@@ -1,5 +1,5 @@
 // Service Worker: Netz zuerst, bei Offline aus dem Cache.
-const CACHE = 'handy-dex-v1';
+const CACHE = 'handy-dex-v2';
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(['./', './index.html', './manifest.webmanifest'])));
